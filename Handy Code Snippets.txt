@@ -1,0 +1,15 @@
+!. Defining comparator
+While soting some DS we can decide on which basis sorting should be done,
+For this we use our custom comparator
+-________________________________________________________________________
+bool customComparison(int a, int b) 
+{ 
+    // Custom comparison logic 
+    return a < b; // it sorts in ascending order 
+} ----> this blck is written outside fuctions 
+
+// Using sort with a function pointer 
+sort(myVec.begin(), myVec.end(), customComparison); 
+
+_________________________________________________________________________
+
