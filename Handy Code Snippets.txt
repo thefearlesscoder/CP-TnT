@@ -11,5 +11,23 @@ bool customComparison(int a, int b)
 // Using sort with a function pointer 
 sort(myVec.begin(), myVec.end(), customComparison); 
 
+--using labda fucntions:
+	
+	sort(myVec.begin(), myVec.end(), [](int a, int b) { 
+       		// Custom comparison logic 
+        	return a < b; // this sorts in ascending order 
+    	});
+
 _________________________________________________________________________
+
+2. Using iterators:
+
+ 	-for taking input in vector
+	
+	vector<string> a(n); // vector size should be given-- and then directly we can take input in the vector
+
+    	for(auto &s:a){
+        	cin>>s;
+	}
+
 
